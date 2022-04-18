@@ -1,6 +1,5 @@
 package com.alefuuuu.webfluxclienttutorial.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,10 +17,7 @@ public class ClientBillController {
 	
 	@RequestMapping("/list")
 	public String list(Model model) {
-		List<Bill> listBill = new ArrayList<Bill>();
-		listBill.addAll(service.searchAll());
-		listBill.addAll(service.searchAll());
-		listBill.addAll(service.searchAll());
+		List<Bill> listBill = service.searchAll().collectList().block();
 		
 		model.addAttribute("listBill", listBill);
 		return "listBill";
