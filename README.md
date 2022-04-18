@@ -1,4 +1,4 @@
-## Amazon SQS with Node
+## Spring WebFlux | client
 
 ![](https://img.shields.io/badge/OS-Windows-informational?style=flat&logo=windows&logoColor=white&color=0078D6)
 ![](https://img.shields.io/badge/IDE-Eclipse-informational?style=flat&logo=eclipse&logoColor=white&color=2C2255)

@@ -1,0 +1,17 @@
+<table>
+	<thead>
+		<tr>
+			<th> id </th>
+			<th> concepto </th>
+			<th> importe </th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<tr th:each="bill : ${listBill}">
+			<td><span th:text="${bill.number}"> </span></td>
+			<td><span th:text="${bill.description}"></span></td>
+			<td><span th:text="${bill.price}"></span></td>
+		</tr>
+	</tbody>
+</table>
